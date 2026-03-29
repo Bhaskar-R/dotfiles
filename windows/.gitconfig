@@ -1,0 +1,22 @@
+# Portable git config — tool settings only
+# Machine-specific settings (user, safe.directory, lfs) stay in local gitconfig
+
+[init]
+	defaultBranch = main
+
+[core]
+	autocrlf = true
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[merge]
+	conflictstyle = zdiff3
+
+[delta]
+	navigate = true
+	dark = true
+	line-numbers = true
+	side-by-side = false
+	syntax-theme = TwoDark
